@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dance Studio On</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="img/DSO-logo.png" alt="Dance Studio On"></a>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="schedule.html" class="nav-link">SCHEDULE</a></li>
+                <li><a href="price.html" class="nav-link">PRICE</a></li>
+                <li><a href="access.html" class="nav-link">ACCESS</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>CONTACT</h1>
+    </div>
+
+    <section class="container animate-up">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <p style="margin-bottom: 20px;">体験レッスンやお問い合わせは、LINE公式アカウントからも受け付けています。</p>
+            <a href="https://lin.ee/anrk6Rc" target="_blank" class="btn-submit"
+                style="background-color: #06c755; display: inline-block; width: auto; padding: 15px 40px; text-decoration: none;">
+                LINEで予約・問い合わせ
+            </a>
+        </div>
+
+        <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('メッセージが送信されました！');">
+            <div class="form-group">
+                <label for="name" class="form-label">NAME</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">EMAIL</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category" class="form-label">CATEGORY</label>
+                <select id="category" name="category" class="form-input">
+                    <option value="trial">体験レッスンについて (Trial Lesson)</option>
+                    <option value="rental">スタジオレンタルについて (Studio Rental)</option>
+                    <option value="other">その他 (Other)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="form-label">MESSAGE</label>
+                <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">SEND MESSAGE</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dance Studio On. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

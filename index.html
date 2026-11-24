@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Studio On</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo"><img src="img/DSO-logo.png" alt="Dance Studio On"></a>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="schedule.html" class="nav-link">SCHEDULE</a></li>
+                <li><a href="price.html" class="nav-link">PRICE</a></li>
+                <li><a href="access.html" class="nav-link">ACCESS</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video -->
+    <section class="hero">
+        <video autoplay muted loop playsinline id="hero-video">
+            <!-- Local dance video -->
+            <source src="video/dance-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- Text removed as per request -->
+        </div>
+
+        <!-- Sound Toggle Rectangular (Moved into Hero) -->
+        <div id="sound-toggle-rect" class="sound-toggle-rect">
+            <div class="sound-state active" id="btn-sound-on">
+                <span>Sound ON</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    style="display:none;">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                </svg>
+                <div style="width: 10px; height: 10px; background: #00ff00; border-radius: 50%; display: none;"></div>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="20" x2="12" y2="10"></line>
+                    <line x1="18" y1="20" x2="18" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="16"></line>
+                </svg>
+            </div>
+            <div class="sound-divider"></div>
+            <div class="sound-state" id="btn-sound-off">
+                <span>Sound OFF</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section (Moved Above Catch Copy) -->
+    <section>
+        <div class="news-styled-container">
+            <div class="news-sidebar-box">
+                <h2 class="news-sidebar-title">NEWS</h2>
+                <a href="#" class="btn-white-box">more</a>
+            </div>
+            <div class="news-list-area">
+                <a href="#" class="news-item-styled stagger-delay-1 animate-fade">
+                    <span class="news-date-styled">2025.10.24</span>
+                    <span class="news-title-styled">第3回発表会「BREAK！」 チケット情報 公開のお知らせ</span>
+                    <span class="news-arrow">&gt;</span>
+                </a>
+                <a href="#" class="news-item-styled stagger-delay-2 animate-fade">
+                    <span class="news-date-styled">2025.10.24</span>
+                    <span class="news-title-styled">第3回発表会「BREAK！」 チケット情報 公開のお知らせ</span>
+                    <span class="news-arrow">&gt;</span>
+                </a>
+                <a href="#" class="news-item-styled stagger-delay-3 animate-fade">
+                    <span class="news-date-styled">2025.08.15</span>
+                    <span class="news-title-styled">第3回発表会「BREAK！」 チケット情報 公開のお知らせ</span>
+                    <span class="news-arrow">&gt;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catch Copy Section (Scroll Triggered) -->
+    <section class="catch-copy-scroll-container">
+        <div class="catch-sticky-wrapper">
+            <!-- Slide 1: Shy & Embarrassed -->
+            <div class="catch-slide slide-1">
+                <div class="catch-content">
+                    <span class="text-en-sub animate-fade stagger-delay-1">FOR THE SHY ONES</span>
+                    <h2 class="catch-main text-outline-white animate-up stagger-delay-1">人見知りで</h2>
+                    <h2 class="catch-main text-outline-white animate-up stagger-delay-2" style="margin-top: 10px;">
+                        恥ずかしがり屋</h2>
+                    <span class="text-jp-sub animate-fade stagger-delay-3">そんなあなたが</span>
+                </div>
+            </div>
+
+            <!-- Slide 1.5: Photo Explosion (Intermediate) -->
+            <div class="catch-slide slide-photos">
+                <!-- Photos will be generated by JS for better control and quantity -->
+            </div>
+
+            <!-- Slide 2: Life Changing Studio -->
+            <div class="catch-slide slide-2">
+                <!-- Graphic Background -->
+                <div class="graphic-burst"></div>
+
+                <div class="catch-content">
+                    <h2 class="catch-main text-red-glow">人生を変える</h2>
+                    <h2 class="catch-main text-white-bold" style="margin-top: 20px;">ダンススタジオ</h2>
+                    <p class="catch-message">
+                        Dance Studio Onは、ダンスでみんなを笑顔にしたい。<br>
+                        そう思い、新しい扉をオープンしました。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Magazine Collage) -->
+    <section class="collage-section">
+        <div class="container" style="position: relative;">
+
+            <!-- Feature 01 -->
+            <div class="collage-row animate-up">
+                <div class="collage-image">
+                    <img src="img/on-sample01.jpg" alt="Class System">
+                </div>
+                <div class="collage-content">
+                    <h3 class="title-condensed"><span>01</span>CLASS SYSTEM</h3>
+                    <p class="feature-desc" style="color: #ccc; margin-bottom: 20px;">
+                        同年代の仲間と一緒だから安心。<br>
+                        リトルキッズから大人まで、それぞれのペースで楽しめます。
+                    </p>
+                    <a href="#" class="btn-arrow">READ THE ARTICLE &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Feature 02 -->
+            <div class="collage-row animate-up">
+                <div class="collage-image">
+                    <img src="img/on-sample02.jpg" alt="Beginner Friendly">
+                </div>
+                <div class="collage-content">
+                    <h3 class="title-condensed"><span>02</span>BEGINNER FRIENDLY</h3>
+                    <p class="feature-desc" style="color: #ccc; margin-bottom: 20px;">
+                        「恥ずかしがり屋」さんのためのスタジオ。<br>
+                        未経験からでも安心してスタートできます。
+                    </p>
+                    <a href="#" class="btn-arrow">READ THE ARTICLE &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Feature 03 -->
+            <div class="collage-row animate-up">
+                <div class="collage-image">
+                    <img src="img/on-sample03.jpg" alt="Events">
+                </div>
+                <div class="collage-content">
+                    <h3 class="title-condensed"><span>03</span>EVENT</h3>
+                    <p class="feature-desc" style="color: #ccc; margin-bottom: 20px;">
+                        発表会やイベントが盛り沢山。<br>
+                        日頃の成果を発揮できる輝くステージが待っています。
+                    </p>
+                    <a href="#" class="btn-arrow">READ THE ARTICLE &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pick Up Section (Journal Grid) -->
+    <section class="container" style="padding: 120px 20px;">
+        <div class="journal-section">
+            <!-- Sidebar with Vertical Text -->
+            <div class="journal-sidebar">
+                <div class="text-vertical-large">EVENT INFO</div>
+            </div>
+
+            <!-- Grid Content -->
+            <div class="journal-grid-container animate-up">
+                <div class="journal-grid">
+                    <!-- Item 1 -->
+                    <div class="journal-card stagger-delay-1">
+                        <div class="journal-img-wrapper">
+                            <img src="https://images.pexels.com/photos/2820896/pexels-photo-2820896.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="journal-img" alt="Spring Showcase">
+                        </div>
+                        <div class="journal-meta">2025.03.20</div>
+                        <h3 class="journal-title">SPRING SHOWCASE 2025<br><span
+                                style="font-size: 0.9rem; font-weight: normal; color: #aaa;">EVENT / HALL A</span></h3>
+                        <div class="journal-line"></div>
+                        <a href="schedule.html" class="journal-link">詳細はこちら &rarr;</a>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="journal-card stagger-delay-2">
+                        <div class="journal-img-wrapper">
+                            <img src="https://images.pexels.com/photos/2233391/pexels-photo-2233391.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="journal-img" alt="Summer Workshop">
+                        </div>
+                        <div class="journal-meta">2025.07.15</div>
+                        <h3 class="journal-title">SUMMER SPECIAL WS<br><span
+                                style="font-size: 0.9rem; font-weight: normal; color: #aaa;">WORKSHOP / STUDIO 1</span>
+                        </h3>
+                        <div class="journal-line"></div>
+                        <a href="schedule.html" class="journal-link">詳細はこちら &rarr;</a>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="journal-card stagger-delay-3">
+                        <div class="journal-img-wrapper">
+                            <img src="https://images.pexels.com/photos/270949/pexels-photo-270949.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                class="journal-img" alt="K-POP Contest">
+                        </div>
+                        <div class="journal-meta">2025.09.10</div>
+                        <h3 class="journal-title">K-POP DANCE CONTEST<br><span
+                                style="font-size: 0.9rem; font-weight: normal; color: #aaa;">CONTEST / LIVE HOUSE</span>
+                        </h3>
+                        <div class="journal-line"></div>
+                        <a href="schedule.html" class="journal-link">詳細はこちら &rarr;</a>
+                    </div>
+                </div>
+
+                <div style="margin-top: 60px; text-align: center;">
+                    <a href="#" class="btn-arrow" style="font-size: 1.2rem;">MORE &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCESS Section -->
+    <section class="container" style="padding: 0 20px 120px 20px;">
+        <h2 class="section-title-center">ACCESS</h2>
+        <div class="access-content-wrapper">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57260.83226221687!2d127.65521994863279!3d26.235621799999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e56b7c106a7859%3A0xdc5ffb5b5e0a89ab!2sDance%20Studio%20On!5e0!3m2!1sja!2sjp!4v1769916976074!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="access-info">
+                <h3 class="access-studio-name">Dance Studio On</h3>
+                <p class="access-text">
+                    〒903-0804<br>
+                    沖縄県那覇市首里石嶺町 4-197-4<br>
+                    沖縄装美工業ビル 301
+                </p>
+                <div class="access-details">
+                    <p><strong>TEL:</strong> 098-000-0000</p>
+                    <p><strong>EMAIL:</strong> info@example.com</p>
+                    <p><strong>OPEN:</strong> 10:00 - 22:00 (Everyday)</p>
+                </div>
+                <div class="access-transport">
+                    <p>最寄り駅: ゆいレール「経塚駅」徒歩8分</p>
+                    <p>「NORITZ」の看板があるビルの最上階（3階）です。<br>ビル向かって右側にある緑のらせん階段から、そのまま最上階までお上がりください。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dance Studio On. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
